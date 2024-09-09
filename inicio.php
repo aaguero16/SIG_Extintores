@@ -1,0 +1,88 @@
+<?php session_start();
+    include ("conexion/conexion.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/signin.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css" >
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body id="body-pd">
+
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header"><a id="nav-title" href="https://codepen.io" target="_blank">C<i class="fab fa-codepen"></i>DEPEN</a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+
+        <div id="nav-content">
+            <div class="nav-button"><i class="fas fa-palette"></i><span>Your Work</span></div>
+            <div class="nav-button"><i class="fas fa-images"></i><span>Assets</span></div>
+            <div class="nav-button"><i class="fas fa-thumbtack"></i><span>Pinned Items</span></div>
+            <hr/>
+            <div class="nav-button"><i class="fas fa-heart"></i><span>Following</span></div>
+            <div class="nav-button"><i class="fas fa-chart-line"></i><span>Trending</span></div>
+            <div class="nav-button"><i class="fas fa-fire"></i><span>Challenges</span></div>
+            <div class="nav-button"><i class="fas fa-magic"></i><span>Spark</span></div>
+            <hr/>
+            <div class="nav-button"><i class="fas fa-gem"></i><span>Codepen Pro</span></div>
+            <div id="nav-content-highlight"></div>
+        </div>
+
+        <input id="nav-footer-toggle" type="checkbox"/>
+        
+        <div id="nav-footer">
+            <div id="nav-footer-heading">
+                <div id="nav-footer-avatar"><img src="https://gravatar.com/avatar/4474ca42d303761c2901fa819c4f2547"/></div>
+                <div id="nav-footer-titlebox"><a id="nav-footer-title" href="https://codepen.io/uahnbu/pens/public" target="_blank">uahnbu</a><span id="nav-footer-subtitle">Admin</span></div>
+                <label for="nav-footer-toggle"><i class="fas fa-caret-up"></i></label>
+            </div>
+            <div id="nav-footer-content">
+                <Lorem>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Lorem>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <main class="form-signin">
+        <form>
+            <h1 class="h3 mb-3">Acceso</h1>
+            
+            <img class="mb-4" src="C:\Proyectos\SIG_Extintores\img/Prevencion_de_extintor.svg" alt width="220">
+            
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo electrónico</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+                <label for="floatingPassword">Contraseña</label>
+            </div>
+            <div class="checkbox mb-3 align-left">
+                <label class="custom-checkbox">
+                    <input type="checkbox" value="remember-me"> 
+                    <span class="checkbox-checkmark"></span>Recuérdame
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+            <p class="mt-5 mb-3 text-muted copy-adcode">© Alonso Aguero 2024</p>
+        </form>
+    </main>
+    
+      <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

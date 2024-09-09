@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* background-color: #f5f5f5; */
+  /* background-color: #F0F0FC; */
+  background-color: #FFF;
+  font-family: "Poppins", sans-serif !important;
+}
+  
+
+h1,h2,h3,h4,h5{
+    color: #471298 !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 700 !important;
+    font-style: italic;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  z-index: 0;
+}
+.form-floating{
+    color: #471298;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 300 !important;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+  color: #471298;
+  text-align: left;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.checkbox-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    margin-top: 2px;
+    background-color: #fff;
+    border: 1px solid #471298;
+    border-radius: 2px ;
+}
+
+.custom-checkbox input:checked ~ .checkbox-checkmark {
+    background-color: #471298;
+    border: 1px solid #471298;
+}
+
+.checkbox-checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkbox-checkmark::after {
+    display: block;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: #dedeff;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-color: #dedeff;
+}
+
+.form-signin button{
+    background-color: #471298;
+    border-color: #471298 !important;
+}
+
+.form-signin button:hover{
+    background-color: #803AE8;
+}
+
+.form-signin .copy-adcode{
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
